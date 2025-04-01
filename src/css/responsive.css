@@ -1,0 +1,129 @@
+/*- Mobile: 500px*/
+@media(max-width:500px){
+    body{
+        font-size: 16px;
+    }
+
+    header{
+        padding: 1.5rem 0rem 1rem 1.5rem;
+    }
+    .logo-header{
+        height: 1.8rem;
+    }
+    .header-navigation{
+        display: flex;
+        gap: 1.5rem;
+        padding: 0rem 1.5rem;
+    }
+
+    .panel img {
+        max-width: 75%;
+        padding: 2rem 0rem 2rem 0rem;
+
+    }
+    .information-panel {
+        max-width: 90vw;
+        gap: 1.5rem;
+        bottom: 0px;
+    }
+    .information-panel h1 {
+        font-size: 25px;
+        line-height: 2.5rem;
+    }
+    .bg-panel{
+        background-image: url('../images/bg-curvy-mobile.svg');
+        background-size: cover;
+        background-size: contain;
+    }
+    .panel{
+        background: linear-gradient(to bottom, hsl(217, 28%, 15%) 63%, hsl(218, 28%, 13%)63%);
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        max-width: 80%;
+        grid-gap: 2rem;
+    }
+
+    .productivity{
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .img-productivity{
+        width: 90%;
+        align-self: center;
+        padding: 4rem 0rem;
+    }
+    .information-productivity{
+        padding: 0;
+    }
+    .information-productivity h2 {
+        font-size: 20px;
+    }
+    
+    .testimonials{
+        flex-direction: column;
+        padding: 4.5rem 0rem;
+    }
+    .comments{
+        margin: 1rem;
+        padding: 1rem 0.8rem;
+    }
+    .quotes{
+        width: 10%;
+        top: 60px;
+        left: 13%;
+    }
+
+
+    .register{
+        padding: 9rem 0rem;
+    }
+    .form-register{
+        width: 350px;
+        padding: 2rem 1rem;
+        top: 40%;
+    }
+    .email-input{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 0.8rem 0rem;
+        max-width: 100%;
+    }
+    .email-input input{
+        padding: 1rem 4rem 1rem 2rem;
+    }
+    .email-input a{
+        margin:0rem;
+        padding: 1rem 5.5rem;
+        font-size: 15px;
+        border-radius: 50px;
+    }
+    
+
+    .footer{
+        padding: 15rem 1.5rem 2rem 1.5rem ;
+    }
+    .logo-footer{
+        padding: 2rem 0rem 2rem 1rem ;
+    }
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80vw;
+    }
+    .footer-navigation{
+        height: 110%;
+        padding: 4rem 1rem ;
+    }
+    .social-icons{
+        justify-content: center;
+    }
+    
+}
+
+/*
+- Desktop: 1440px */

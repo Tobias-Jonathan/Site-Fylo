@@ -1,0 +1,26 @@
+header{
+    background-color: var(--color-primary-dark-blue-intro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem 2rem 4rem;
+}
+.logo-header{
+    height: 3rem;
+}
+.header-navigation{
+    display: flex;
+    gap: 3rem;
+    padding: 0rem 4rem 0rem 0rem;
+}
+.header-navigation a{
+    font-family: var(--font-family-headings);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-neutral-white);
+    font-size: 1rem;
+}
+.header-navigation a:hover{
+    text-shadow: 0px 0px 2px var(--color-neutral-white);
+    text-decoration: underline;
+    transition: 0.3s;
+}
