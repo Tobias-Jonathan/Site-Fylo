@@ -1,8 +1,5 @@
 /*- Mobile: 500px*/
 @media(max-width:500px){
-    body{
-        font-size: 16px;
-    }
 
     header{
         padding: 1.5rem 0rem 1rem 1.5rem;
@@ -16,29 +13,39 @@
         padding: 0rem 1.5rem;
     }
 
+    .panel{
+        background-image: url('../images/bg-curvy-mobile.svg');
+        background-size: contain;
+        padding: 0;
+        position: relative;
+        padding: 0rem 0rem 4rem 0rem;
+    }
     .panel img {
         max-width: 75%;
         padding: 2rem 0rem 2rem 0rem;
 
     }
-    .information-panel {
-        max-width: 90vw;
-        gap: 1.5rem;
-        bottom: 0px;
-    }
-    .information-panel h1 {
+    .panel h1 {
         font-size: 25px;
         line-height: 2.5rem;
+        max-width: 90vw;
+        position: absolute;
+        bottom: -15%;
     }
-    .bg-panel{
-        background-image: url('../images/bg-curvy-mobile.svg');
-        background-size: cover;
-        background-size: contain;
+    .panel p{
+        max-width: 90vw;
+        font-size: 1.1rem;
+        position: absolute;
+        bottom: -70%;
     }
-    .panel{
-        background: linear-gradient(to bottom, hsl(217, 28%, 15%) 63%, hsl(218, 28%, 13%)63%);
+    .panel button{
+        position: absolute;
+        bottom: -70%;
     }
 
+    .services-container{
+        padding: 23rem 0rem 0rem 0rem;
+    }
     .services {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;

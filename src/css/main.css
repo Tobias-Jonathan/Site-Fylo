@@ -1,58 +1,44 @@
 /*introduction panel*/
-.panel,
-.services-container {
-    background-color: var(--color-primary-dark-blue-intro);
+.panel{
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%;
+    background-color:var(--color-primary-dark-blue-intro);
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 0rem 0rem 10rem 0rem;
 }
-.panel img {
+.panel img{
+    max-width: 700px;
+    padding: 1rem;
+}
+.panel h1{
     max-width: 50%;
-    padding: 0rem 0rem 5rem 0rem;
+    font-size: 40px;
 }
-.information-panel {
-    max-width: 45%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    position: relative;
-    bottom: 50px;
-    margin: auto;
+.panel p{
+    max-width: 40%;
+    padding: 4rem 0rem;
 }
-.information-panel h1 {
-    font-size: 35px;
-    text-align: center;
-}
-.information-panel a {
-    font-size: 17px;
-}
-.information-panel a button:hover{
-    text-shadow: 0px 0px 3px var(--color-neutral-white);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-} 
-
-.bg-panel{
-    background-image: url('../images/bg-curvy-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 25rem;
-    width: 100%;
-    
-}
-.bg-panel a button {
-    background-color: var(--color-accent-cyan);
-    padding: 0.8rem 5rem;
-    border-radius: 50px
-}
-.bg-mobile{
-    display: none;
+.panel button{
+    background: linear-gradient(90deg, var(--color-accent-cyan), var(--color-accent-blue));
+    padding: 1rem 5rem;
+    border-radius: 50px;
 }
 
 /*panel-services*/
 .services-container,
 .panel-productivity {
     background-color: var(--color-primary-dark-blue-main);
+}
+.services-container {
+    background-color: var(--color-primary-dark-blue-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .services {
     display: grid;
@@ -164,11 +150,14 @@ p {
 .form-register{
     background-color: var(--color-primary-dark-blue-intro);
     width: 800px;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     text-align: center;
     border-radius: 8px;
     position: absolute;
     top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h3{
     font-size: 30px;
@@ -176,22 +165,27 @@ h3{
 }
 .form-register p {
     font-size: 15px;
+    max-width: 90%;
 }
 .email-input{
-    padding: 2rem 0rem;
+    padding: 2em;
+    display: flex;
+    max-width: 100%;
 }
 .email-input input{
-    padding: 1rem 15rem 1rem 2rem;
+    padding: 0rem 15rem 0rem 2rem;
+    max-height: 50px;
     border-radius: 50px;
 }
-.email-input a{
-    background-color: var(--color-accent-cyan);
-    margin: 1rem;
+.email-input button{
+    background: linear-gradient(90deg, var(--color-accent-cyan), var(--color-accent-blue));
     padding: 1rem 2rem;
-    font-size: 15px;
     border-radius: 50px;
+    max-height: 50px;
+    margin-left: 30px;
+    font-size: 0.9rem;
 }
-.email-input a:hover{
+button:hover{
     text-shadow: 0px 0px 3px var(--color-neutral-white);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
     transition: 0.3s;
